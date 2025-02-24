@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Library</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Enter your movie name" class="search">
+            <select id="genre-filter" class="genre-filter">
+                
+                <option value="all">All</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+            </select>
+            <select id="sort-filter" class="sort-filter">
+                <option value="default">Sort </option>
+                <option value="year">Sort by Year</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+            <button onclick="filterMovies()" class="select-btn">Search</button>
+        </div>
+        <div class="movie-list" id="movie-list"></div>
+    </div>
+
+
+
+    
+    <script src="./main.js"></script>
+    <script src="./movies.js"></script>
+</body>
+</html>
+
+
